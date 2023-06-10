@@ -1,8 +1,3 @@
-// nguồn freetuts
-#include <bits/stdc++.h>
-using namespace std;
- 
-//Hàm tìm kiếm nhi phân
 int binarySearch(int arr[], int left, int right, int x) {
     int middle;
  
@@ -27,17 +22,4 @@ int binarySearch(int arr[], int left, int right, int x) {
  
     //Trả về -1 nếu không tìm thấy gía trị trong mảng.
     return -1;
-}
-int main() {
-    int arr[] = {15, 20, 25, 30, 31, 44, 66};
- 
-    //Lấy ra độ dài của mảng
-    int n = sizeof(arr) / sizeof(arr[0]);
-    //Phần từ cần tìm
-    int x = 25;
-     
-    // n -1 là vị trí cuối cùng trong mảng.
-    int result = binarySearch(arr, 0, n-1, x);
- 
-    cout << result;
 }
